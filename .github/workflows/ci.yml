@@ -1,13 +1,14 @@
-name: ...
+name: CI
+
 on:
-pull_request:
-  paths:
-    - ...
-workflow_call:
+  pull_request:
+    paths:
+      - ...
+  workflow_call:
 
 jobs:
   ci:
-    runs-on: ${{ vars.RUNNER || 'self-hosted' }}
+    runs-on: ubuntu-latest
 
     defaults:
       run:
