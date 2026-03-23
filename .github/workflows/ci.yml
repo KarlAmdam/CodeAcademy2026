@@ -1,10 +1,9 @@
-name: CI
-
+name: ...
 on:
-  pull_request:
-    paths:
-      - "..."
-  workflow_call:
+pull_request:
+  paths:
+    - ...
+workflow_call:
 
 jobs:
   ci:
