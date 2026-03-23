@@ -1,13 +1,12 @@
-name: CI
-
+name: ...
 on:
-  pull_request:
-    paths:
-      - ...
+pull_request:
+  paths:
+    - ...
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER || 'self-hosted' }}
 
     defaults:
       run:
