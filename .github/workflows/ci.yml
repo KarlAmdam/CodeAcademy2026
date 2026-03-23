@@ -1,8 +1,8 @@
-name: ...
+name: package
 on:
   pull_request:
     paths:
-      - ...
+      - "1-DevOps/idempotweet/**"
 
 jobs:
   ci:
